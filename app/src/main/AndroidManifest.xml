@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".login_database"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".Session_4.favorite_page"
+            android:exported="false" />
+        <activity
+            android:name=".Session_5.govno.one_govno_page"
+            android:exported="false" />
+        <activity
+            android:name=".Session_5.map_page"
+            android:exported="false" />
+        <activity
+            android:name=".Session_3.lenta_home_page_image_only"
+            android:exported="false" />
+        <activity
+            android:name=".Session_3.lenta_home_page_text_only"
+            android:exported="false" />
+        <activity
+            android:name=".Session_3.lenta_home_page"
+            android:exported="false" />
+        <activity
+            android:name=".Session_2.Chose_Ptatform_Three"
+            android:exported="false" />
+        <activity
+            android:name=".Session_2.Choose_Platform"
+            android:exported="false" />
+        <activity
+            android:name=".Session_2.SetupProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Session_1.Exit"
+            android:exported="false" />
+        <activity
+            android:name=".Session_1.New_Pass"
+            android:exported="false" />
+        <activity
+            android:name=".Session_1.Verification"
+            android:exported="false" />
+        <activity
+            android:name=".Session_1.Forgot_Pass"
+            android:exported="false" />
+        <activity
+            android:name=".Session_1.Create_Acc"
+            android:exported="false" />
+        <activity
+            android:name=".Session_1.Registry"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

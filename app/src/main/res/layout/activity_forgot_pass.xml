@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Session_1.Forgot_Pass">
+
+
+    <TextView
+        android:id="@+id/Subgreeting"
+        android:layout_width="140dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="22dp"
+        android:fontFamily="@font/roboto"
+        android:text="Введите свою почту"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Remember_Password"
+        app:layout_constraintTop_toBottomOf="@+id/Remember_Password" />
+
+    <TextView
+        android:id="@+id/Remember_Password"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="101dp"
+        android:fontFamily="@font/roboto"
+        android:text="Восстановление пароля"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="352dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:hint="***********@mail.com"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:selectAllOnFocus="false"
+        android:textColor="#000000"
+        android:textColorHint="#80000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Subgreeting" />
+
+
+    <TextView
+        android:id="@+id/textMail"
+        android:layout_width="45dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Почта"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email" />
+
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="342dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="62dp"
+        android:fontFamily="@font/roboto"
+        android:background="@drawable/button_back"
+        android:backgroundTint="#A7A7A7"
+        android:text="Отправить код"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="54dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/roboto"
+        android:text="Вернуться"
+        android:textAllCaps="false"
+        android:textColor="@color/purple"
+
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/enterButton"
+        app:layout_constraintTop_toBottomOf="@+id/enterButton"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/createAcc"
+        android:layout_width="170dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/roboto"
+        android:text="Я вспомнил свой пароль!"
+        android:textColor="@color/grey"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/enterButton"
+        app:layout_constraintTop_toBottomOf="@+id/enterButton"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
